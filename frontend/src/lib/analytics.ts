@@ -40,7 +40,7 @@ export function reportWebVitals() {
     const observer = new PerformanceObserver((list) => {
       for (const entry of list.getEntries()) {
         // Send metric to custom analytics event or console in development
-        if (process.env.NODE_ENV === "development") {
+        if (import.meta.env.DEV) {
           console.debug(`[Speed Insights] ${entry.name}:`, entry);
         }
       }
