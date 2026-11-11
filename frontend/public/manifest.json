@@ -1,0 +1,16 @@
+{
+  "name": "Spotter AI - Weather-Aware Truck Routing",
+  "short_name": "Spotter AI",
+  "description": "Weather-aware commercial truck routing and risk analysis platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#06404f",
+  "theme_color": "#06404f",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}

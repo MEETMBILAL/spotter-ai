@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Spotter AI - Weather-Aware Commercial Truck Routing &amp; Corridor Risk Intelligence</title>
+
+    <!-- Google Search Console Site Verification -->
+    <meta name="google-site-verification" content="googledda28efb68970fa2" />
+
+    <!-- Essential Google Search & Core SEO -->
+    <meta name="description" content="Spotter AI is the professional weather-aware truck routing platform. Compare commercial freight routes by wind rollover risk, heavy snowfall, and road hazards adjusted for load weight and departure times using real forecast models." />
+    <meta name="keywords" content="Spotter AI, weather-aware truck routing, truck weather forecast, commercial freight routing, truck wind rollover risk, heavy load weather router, road weather alerts, winter trucking safety, truck route planner with weather" />
+    <meta name="author" content="Spotter AI" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#06404f" />
+    <link rel="canonical" href="https://spotter-ai.vercel.app/" />
+
+    <!-- Open Graph (Facebook, LinkedIn, Discord, Slack) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://spotter-ai.vercel.app/" />
+    <meta property="og:site_name" content="Spotter AI" />
+    <meta property="og:title" content="Spotter AI - Weather-Aware Commercial Truck Routing" />
+    <meta property="og:description" content="Avoid blowovers and severe weather delays. Spotter AI calculates crosswinds, snow, and rain risks along truck corridors matched to checkpoint arrival times." />
+    <meta property="og:image" content="https://spotter-ai.vercel.app/og-image.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Spotter AI corridor weather risk dashboard and route planner" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Spotter AI - Weather-Aware Truck Routing" />
+    <meta name="twitter:description" content="Real-time corridor risk intelligence for commercial trucking fleets and independent drivers." />
+    <meta name="twitter:image" content="https://spotter-ai.vercel.app/og-image.svg" />
+
+    <!-- Geospatial / Local Metadata -->
+    <meta name="geo.region" content="US" />
+    <meta name="geo.position" content="39.8283;-98.5795" />
+    <meta name="ICBM" content="39.8283, -98.5795" />
+    <meta name="geo.placename" content="United States" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Performance: Domain Preconnects -->
+    <link rel="preconnect" href="https://api.mapbox.com" crossorigin />
+    <link rel="preconnect" href="https://events.mapbox.com" crossorigin />
+    <link rel="preconnect" href="https://api.open-meteo.com" crossorigin />
+    <link rel="dns-prefetch" href="https://api.mapbox.com" />
+    <link rel="dns-prefetch" href="https://api.open-meteo.com" />
+
+    <!-- Comprehensive Rich Structured Data (JSON-LD) for Google SGE, Knowledge Graph & AEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://spotter-ai.vercel.app/#webapp",
+          "name": "Spotter AI",
+          "headline": "Weather-Aware Commercial Truck Routing & Corridor Risk Analysis",
+          "url": "https://spotter-ai.vercel.app/",
+          "applicationCategory": "NavigationApplication",
+          "operatingSystem": "All modern web browsers",
+          "description": "Spotter AI helps commercial freight carriers, dispatchers, and truck drivers plan safe routes by evaluating real-time weather risks (high crosswinds, snow, freezing rain, and severe weather) calculated at exact checkpoint arrival times and calibrated to trailer gross weight.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "featureList": [
+            "Real-time route weather matching based on checkpoint ETA",
+            "Vehicle gross load weight wind blowover risk adjustment",
+            "Lexicographical route safety comparison (up to 3 routes)",
+            "48-hour corridor weather heatmaps for wind, rain, and snow",
+            "Strict authentic weather data guarantee (no fabricated forecasts)"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://spotter-ai.vercel.app/#organization",
+          "name": "Spotter AI",
+          "url": "https://spotter-ai.vercel.app/",
+          "logo": "https://spotter-ai.vercel.app/og-image.svg",
+          "description": "Provider of meteorological routing solutions and freight weather risk intelligence."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://spotter-ai.vercel.app/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is Spotter AI and how does it work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Spotter AI is a specialized route planning platform for commercial trucking that matches real-time weather forecasts along driving corridors to the exact estimated time of arrival (ETA) at each checkpoint, highlighting dangerous crosswinds, heavy snow, and severe storms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why is trailer weight important in truck weather routing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Empty or light trailers (under 30,000 lbs) are extremely susceptible to high wind rollovers and jackknifing at wind gusts above 35 mph. Fully loaded rigs (up to 80,000 lbs) have greater stability. Spotter AI dynamically adjusts danger ratings based on your entered gross weight."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does Spotter AI compare multiple driving routes?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Spotter AI evaluates up to three viable commercial corridors using lexicographic ranking: routes with fewer miles of severe and high weather hazards are ranked first. If every corridor has 'No Travel' conditions, the tool clearly alerts dispatchers that no safe route is available."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where does Spotter AI source its weather and routing data?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Spotter AI pairs commercial-grade Mapbox Directions routing geometry with high-resolution numerical weather prediction models provided by Open-Meteo. It never fabricates or simulates fictional weather forecasts."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Crawlable semantic content for Googlebot and non-JS search engines -->
+    <div id="root">
+      <header style="padding: 1.5rem; background: #06404f; color: #ffffff; font-family: sans-serif;">
+        <h1 style="margin: 0; font-size: 1.8rem;">Spotter AI — Weather-Aware Commercial Truck Routing</h1>
+        <p style="margin: 0.5rem 0 0; opacity: 0.9;">Professional corridor meteorological risk assessment and freight safety navigation.</p>
+      </header>
+
+      <main style="padding: 1.5rem; font-family: sans-serif; line-height: 1.6; max-width: 900px; color: #14232b;">
+        <section aria-label="About Spotter AI">
+          <h2>Predict Road Hazards Along Commercial Freight Corridors</h2>
+          <p>
+            <strong>Spotter AI</strong> provides commercial truck drivers, fleet operators, and freight dispatchers with weather intelligence matched to road corridors. Unlike standard weather apps that display current radar for a static city, Spotter AI calculates the exact <strong>Estimated Time of Arrival (ETA)</strong> for each 10, 25, or 50-mile segment of a route and pairs it with real-time numerical weather predictions.
+          </p>
+        </section>
+
+        <section aria-label="Key Truck Safety Features">
+          <h3>Key Safety &amp; Routing Capabilities</h3>
+          <ul>
+            <li><strong>Crosswind &amp; Blowover Overrides:</strong> Calculates trailer rollover danger based on gross load weight (15,000 lbs empty up to 80,000 lbs loaded).</li>
+            <li><strong>Corridor Comparison:</strong> Compares up to 3 driving alternatives, ranking them lexicographically by miles of severe wind, snow, and rain exposure.</li>
+            <li><strong>48-Hour Corridor Heatmaps:</strong> 49-frame hourly forecasts visualizing moving storm fronts, snow bands, and wind fields.</li>
+            <li><strong>Verified Forecast Data:</strong> Powered by Open-Meteo ensemble weather models and Mapbox navigation networks—no mock or simulated data.</li>
+          </ul>
+        </section>
+
+        <section aria-label="Frequently Asked Questions">
+          <h3>Frequently Asked Questions</h3>
+          <article>
+            <h4>How does weather-aware truck routing prevent freight delays?</h4>
+            <p>By identifying hazardous segments before departure, drivers can alter departure times, choose alternative corridors, or avoid known mountain pass blizzards and high-wind corridors like I-80 in Wyoming or I-70 through Colorado.</p>
+          </article>
+          <article>
+            <h4>What qualifies as a 'No Travel' safety status?</h4>
+            <p>Conditions with extreme sustained crosswinds exceeding rollover thresholds, heavy blizzard snowfall rates, or severe freezing precipitation cause Spotter AI to flag a corridor as ineligible for safe commercial travel.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

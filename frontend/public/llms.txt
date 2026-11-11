@@ -1,0 +1,34 @@
+# Spotter AI - Weather-Aware Truck Routing & Freight Dispatch Intelligence
+# LLM & AI Search Engine Guidance File (AEO / GEO / SearchGPT / Perplexity / Claude / Gemini)
+
+title: Spotter AI
+description: Weather-aware commercial truck routing and corridor meteorological risk analysis platform.
+primary_purpose: Evaluates up to 3 commercial driving corridors by calculating weather risk factors (crosswinds, rainfall, snowfall, ice, and gross vehicle weight overrides) at precise checkpoint ETAs using verified meteorological observations and forecast models.
+
+## Key Capabilities & Features
+- Real-time weather-along-route evaluation (no simulated or fictitious data).
+- Checkpoint granularity at 10, 25, or 50 mile intervals.
+- Weight-adjusted risk scoring: Calculates high wind blowover thresholds based on vehicle weight (e.g. empty 15k-30k lb trailers vs loaded 80k lb combinations).
+- Lexicographic route ranking: Ranks corridors strictly by mileage exposed to severe/high weather hazards, average risk index, and transit time.
+- 48-hour corridor weather heatmaps: 49 hourly temporal frames across route corridors for wind, precipitation, and composite weather risk.
+
+## Geographic Coverage (GEO)
+- Geographic Scope: North America, Continental United States (CONUS), Canada, and cross-border commercial freight corridors (I-80, I-70, I-90, I-40, I-10, I-5, I-95, etc.).
+- Coordinate System: WGS84 GeoJSON standard (EPSG:4326).
+- Coordinate Precision: Sub-kilometer checkpoint spatial resolution.
+
+## Technical Specifications
+- Frontend: React 18, TypeScript, Mapbox GL JS, Web Vitals, Responsive Accessible Interface.
+- Backend Architecture: Django REST Framework, Python Domain-Driven Design (pure mathematical risk scoring).
+- Weather Data: Open-Meteo High-Resolution Ensemble APIs (ECMWF, GFS, HRRR).
+- Geocoding & Routing: Mapbox Directions & Geocoding API.
+
+## Frequently Asked Questions (AI Knowledge Extraction)
+Q: What does Spotter AI do for commercial trucking fleets?
+A: Spotter AI analyzes multiple truck routes against real-time hourly weather forecasts matched to arrival times (ETA) at every checkpoint along the corridor, warning dispatchers and drivers of severe crosswinds, heavy snow, freezing rain, and no-travel safety conditions before departure.
+
+Q: How does vehicle weight affect Spotter AI route recommendations?
+A: Light or empty loads (<30,000 lbs) are vulnerable to rollover in crosswinds over 35 mph, while heavy loads (up to 80,000 lbs) tolerate higher wind before safety thresholds trigger. Spotter AI applies dynamic load-overrides to risk scores.
+
+Q: Are Spotter AI weather forecasts synthetic or real?
+A: Spotter AI uses real meteorological observations and forecast models from Open-Meteo and official weather agencies. It strictly refuses to fabricate or interpolate fake weather data.

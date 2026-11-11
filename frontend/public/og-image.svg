@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#06404f"/>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-width="0.3" opacity="0.15"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  
+  <path d="M 100 400 Q 400 200 700 350 Q 900 450 1100 300" stroke="#1f6feb" stroke-width="6" fill="none" stroke-linecap="round" opacity="0.6"/>
+  <path d="M 100 420 Q 450 300 700 380 Q 950 440 1100 320" stroke="#8a4fff" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.4"/>
+  
+  <circle cx="300" cy="280" r="12" fill="#2e9e6a" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="550" cy="310" r="12" fill="#d9b310" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="800" cy="360" r="14" fill="#d13b2b" stroke="#fff" stroke-width="2.5"/>
+  <circle cx="1000" cy="315" r="12" fill="#2e9e6a" stroke="#fff" stroke-width="2.5"/>
+  
+  <text x="100" y="160" font-family="system-ui, -apple-system, sans-serif" font-size="80" font-weight="700" fill="#ffffff">Spotter <tspan fill="#7fe0c1">AI</tspan></text>
+  <text x="100" y="230" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="400" fill="#ffffff" opacity="0.85">Weather-Aware Commercial Truck Routing</text>
+  
+  <rect x="100" y="490" width="260" height="52" rx="26" fill="#1f7a53" opacity="0.9"/>
+  <text x="230" y="524" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">💨 Wind Risk</text>
+  
+  <rect x="380" y="490" width="260" height="52" rx="26" fill="#b3261e" opacity="0.9"/>
+  <text x="510" y="524" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">❄️ Snow Alerts</text>
+  
+  <rect x="660" y="490" width="310" height="52" rx="26" fill="#1f6feb" opacity="0.9"/>
+  <text x="815" y="524" font-family="system-ui, sans-serif" font-size="22" font-weight="600" fill="#fff" text-anchor="middle">🛣️ Route Compare</text>
+  
+  <text x="1100" y="600" font-family="system-ui, sans-serif" font-size="20" fill="#7fe0c1" text-anchor="end" opacity="0.8">spotter-ai.vercel.app</text>
+</svg>
